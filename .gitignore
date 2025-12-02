@@ -17,3 +17,4 @@ local.properties
 /app/release
 /app/debug
 /app/google-services.json
+/data/src/main/assets/koreai-android-*.json

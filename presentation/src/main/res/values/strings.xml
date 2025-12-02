@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">기본</string>
+    <string name="loadingAdMessage">광고를 준비 중입니다. 잠시만 기다려주세요</string>
+    <string name="extractImagePrompt">이미지 프롬프트 추출</string>
+    <string name="generateImage">이미지 생성하기</string>
+    <string name="createYourOwnImage">당신만의 이미지를 생성해보세요</string>
+    <string name="inputImageText">이미지를 생성할 텍스트를 입력하세요.\n자세한 프롬포트를 입력할수록 멋진 결과물이 생성됩니다.</string>
+    <string name="clearText">텍스트 지우기</string>
+    <string name="hidePreviousHistory">이전 생성 기록 감추기</string>
+    <string name="showPreviousHistory">이전 생성 기록 보이기</string>
+    <string name="imageAspectRatio">이미지 비율</string>
+    <string name="selectDefaultStyle">기본 스타일 선택</string>
+    <string name="loadingImage">이미지를 불러오는중</string>
+    <string name="saveImage">저장하기</string>
+    <string name="reportImage">이 이미지 신고하기</string>
+    <string name="fetchingImage">이미지를 가져오는중</string>
+    <string name="style_none">스타일 지정 안함</string>
+    <string name="style_realistic">사실적인</string>
+    <string name="style_two_d_game_art">2D 게임 아트</string>
+    <string name="style_three_d_animation">3D 애니메이션</string>
+    <string name="style_abstract_painting">추상화</string>
+    <string name="style_japanese_animation">일본 애니메이션</string>
+    <string name="style_monster">몬스터</string>
+    <string name="style_steam_punk">스팀펑크</string>
+    <string name="style_horror">호러</string>
+    <string name="style_game_graphic">게임 그래픽</string>
+    <string name="style_pop_art">팝 아트</string>
+    <string name="style_black_and_white">흑백</string>
+    <string name="style_renaissance">르네상스</string>
+    <string name="style_sketch">스케치</string>
+    <string name="style_street_art">길거리 아트</string>
+
+    <string name="image_guide_1">A red-haired girl with fair skin, wearing a white t-shirt and jeans, standing in sunlight, wind blowing her hair, warm and peaceful atmosphere, lifelike textures, high-quality shading.</string>
+    <string name="image_guide_2">A single streetlamp under a starry sky, countless twinkling stars, soft moonlight casting a glow, quiet and peaceful night, detailed clouds, wide-angle view, realistic lighting reflections.</string>
+    <string name="image_guide_3">A fox gazing at a massive dragon in a surreal setting, glowing mystical aura, intricate scales and fur, misty background, magical energy, vibrant colors, soft fantasy lighting.</string>
+    <string name="image_guide_4">An ornate skull beside a glowing treasure chest, mystical runes, shimmering gemstones, golden reflections, ultra-detailed textures, cinematic shadows, mysterious and magical atmosphere.</string>
+    <string name="image_guide_5">A crystal ball with floating petals, glowing softly, intricate reflections, magical energy swirling inside, dreamy ambiance, detailed lighting, rich colors.</string>
+    <string name="image_guide_6">A ninja sneaking into a guarded facility at night, wearing black, moving across rooftops, avoiding cameras, gripping a katana, foggy air, dim alleys, focused expression.</string>
+    <string name="image_guide_7">A stylish man walking through office workers in a bustling city, wearing a sleek suit, sharp features, cinematic lighting, vibrant urban colors, motion blur, dynamic perspective.</string>
+    <string name="image_guide_8">An anime girl with large eyes, detailed hair, vibrant colors, stylish outfit, polished shading, high-quality aesthetic, colorful bokeh background, Makoto Shinkai-inspired lighting and atmosphere.</string>
+    <string name="image_guide_9">An old man with a bushy beard holding a small toy, quirky inventor, surrounded by tools and blueprints, dimly lit workshop, nostalgic ambiance, expressive eyes.</string>
+    <string name="image_guide_10">A boy stepping into an unknown world, glowing portal, floating islands, vibrant colors, cinematic depth, magical energy, sense of adventure.</string>
+    <string name="image_guide_11">A tiny fluffy bird perched on a branch, large sparkling eyes, soft colorful feathers, dreamy atmosphere, glowing sunlight, intricate feather details.</string>
+    <string name="image_guide_12">A cold winter forest covered in snow, drifting snowflakes, frost-covered trees, soft blue light, peaceful atmosphere, misty background.</string>
+
+    <string name="snackbar_enter_generation_sentence">이미지 생성 시 사용될 문장을 입력해주세요.</string>
+    <string name="snackbar_check_network">네트워크 연결을 확인해주세요.</string>
+    <string name="snackbar_no_generation_history">이미지 생성 내역이 존재하지 않아요!</string>
+    <string name="snackbar_image_generation_failed">이미지 생성에 실패하였습니다.</string>
+    <string name="snackbar_image_save_success">이미지 저장 완료!</string>
+    <string name="snackbar_image_save_failed">이미지 저장 실패</string>
+    <string name="snackbar_inappropriate_image_detected">부적절한 이미지가 생성되어 요청이 거부되었습니다.</string>
+</resources>

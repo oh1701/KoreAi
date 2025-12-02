@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">기본</string>
+    <string name="loadingAdMessage">Preparing the advertisement. Please wait a moment.</string>
+    <string name="extractImagePrompt">Extracting image prompt</string>
+    <string name="generateImage">Generating image</string>
+    <string name="createYourOwnImage">Create your own image</string>
+    <string name="inputImageText">Enter text to generate an image.\nThe more detailed the prompt, the better the results</string>
+    <string name="clearText">Clear text</string>
+    <string name="hidePreviousHistory">Hide previous generation history</string>
+    <string name="showPreviousHistory">Show previous generation history</string>
+    <string name="imageAspectRatio">Image aspect ratio</string>
+    <string name="selectDefaultStyle">Select default style</string>
+    <string name="loadingImage">Loading image</string>
+    <string name="saveImage">Save</string>
+    <string name="reportImage">Report this Image</string>
+    <string name="fetchingImage">Fetching image</string>
+    <string name="style_none">None</string>
+    <string name="style_realistic">Realistic</string>
+    <string name="style_two_d_game_art">2D Game Art</string>
+    <string name="style_three_d_animation">3D Animation</string>
+    <string name="style_abstract_painting">Abstract Painting</string>
+    <string name="style_japanese_animation">Japanese Anime</string>
+    <string name="style_monster">Monster</string>
+    <string name="style_steam_punk">Steam Punk</string>
+    <string name="style_horror">Horror</string>
+    <string name="style_game_graphic">Hyper Realism 3D Game Graphic</string>
+    <string name="style_pop_art">PopArt</string>
+    <string name="style_black_and_white">Black and White</string>
+    <string name="style_renaissance">Renaissance</string>
+    <string name="style_sketch">Sketch</string>
+    <string name="style_street_art">StreetArt</string>
+
+    <string name="image_guide_1">A red-haired girl with fair skin, wearing a white t-shirt and jeans, standing in sunlight, wind blowing her hair, warm and peaceful atmosphere, lifelike textures, high-quality shading.</string>
+    <string name="image_guide_2">A single streetlamp under a starry sky, countless twinkling stars, soft moonlight casting a glow, quiet and peaceful night, detailed clouds, wide-angle view, realistic lighting reflections.</string>
+    <string name="image_guide_3">A fox gazing at a massive dragon in a surreal setting, glowing mystical aura, intricate scales and fur, misty background, magical energy, vibrant colors, soft fantasy lighting.</string>
+    <string name="image_guide_4">An ornate skull beside a glowing treasure chest, mystical runes, shimmering gemstones, golden reflections, ultra-detailed textures, cinematic shadows, mysterious and magical atmosphere.</string>
+    <string name="image_guide_5">A crystal ball with floating petals, glowing softly, intricate reflections, magical energy swirling inside, dreamy ambiance, detailed lighting, rich colors.</string>
+    <string name="image_guide_6">A ninja sneaking into a guarded facility at night, wearing black, moving across rooftops, avoiding cameras, gripping a katana, foggy air, dim alleys, focused expression.</string>
+    <string name="image_guide_7">A stylish man walking through office workers in a bustling city, wearing a sleek suit, sharp features, cinematic lighting, vibrant urban colors, motion blur, dynamic perspective.</string>
+    <string name="image_guide_8">An anime girl with large eyes, detailed hair, vibrant colors, stylish outfit, polished shading, high-quality aesthetic, colorful bokeh background, Makoto Shinkai-inspired lighting and atmosphere.</string>
+    <string name="image_guide_9">An old man with a bushy beard holding a small toy, quirky inventor, surrounded by tools and blueprints, dimly lit workshop, nostalgic ambiance, expressive eyes.</string>
+    <string name="image_guide_10">A boy stepping into an unknown world, glowing portal, floating islands, vibrant colors, cinematic depth, magical energy, sense of adventure.</string>
+    <string name="image_guide_11">A tiny fluffy bird perched on a branch, large sparkling eyes, soft colorful feathers, dreamy atmosphere, glowing sunlight, intricate feather details.</string>
+    <string name="image_guide_12">A cold winter forest covered in snow, drifting snowflakes, frost-covered trees, soft blue light, peaceful atmosphere, misty background.</string>
+
+    <string name="snackbar_enter_generation_sentence">Please enter a sentence to be used for image generation.</string>
+    <string name="snackbar_check_network">Please check your network connection.</string>
+    <string name="snackbar_no_generation_history">No image generation history found!</string>
+    <string name="snackbar_image_generation_failed">Failed to generate the image.</string>
+    <string name="snackbar_image_save_success">Image saved successfully!</string>
+    <string name="snackbar_image_save_failed">Failed to save the image.</string>
+    <string name="snackbar_inappropriate_image_detected">Failed to load the image due to inappropriate words.</string>
+
+</resources>
