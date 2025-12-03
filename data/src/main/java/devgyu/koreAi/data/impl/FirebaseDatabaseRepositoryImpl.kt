@@ -57,7 +57,6 @@ class FirebaseDatabaseRepositoryImpl @Inject constructor(
      * Firebase 실패해도 로컬 데이터에서는 처리되도록 설정
      * */
     override suspend fun postDecreaseCreatableCnt(): Result<Void> = postCreatableCnt { it - 1 }
-    override suspend fun postIncreaseCreatableCnt(): Result<Void> = postCreatableCnt { it + 1 }
 
     private suspend fun postCreatableCnt(cnt: (count: Int) -> Int): Result<Void> {
         val adId = dataStoreManager.getValue<String?>(DataStoreKeys.S_USER_ADID)

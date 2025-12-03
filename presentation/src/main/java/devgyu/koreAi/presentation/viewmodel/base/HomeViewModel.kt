@@ -5,7 +5,6 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import devgyu.koreAi.core.ioDispatcher
 import devgyu.koreAi.domain.entity.FluxImageRes
-import devgyu.koreAi.domain.usecase.AddCreatableImageCountUseCase
 import devgyu.koreAi.domain.usecase.DeleteGeneratedImageDataUseCase
 import devgyu.koreAi.domain.usecase.DownloadImageUrlToFileUseCase
 import devgyu.koreAi.domain.usecase.FetchFluxImageUseCase
