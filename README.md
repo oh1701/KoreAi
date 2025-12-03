@@ -1,6 +1,6 @@
 # KoreAi
 
-**KoreAi**는 **Jetpack Compose**와 **Clean Architecture**를 기반으로 구축된 안드로이드 AI 이미지 생성 애플리케이션입니다.
+**KoreAi**는 2025년 3월에 출시한, **Jetpack Compose**와 **Clean Architecture**를 기반으로 구축된 안드로이드 AI 이미지 생성 애플리케이션입니다.
 
 기존 다른 이미지 생성 앱과는 달리 **Google Translation API** 와 연동하여 한국어로 이미지 생성이 가능합니다.
 
@@ -33,14 +33,21 @@
 
 ```mermaid
 graph TD
-    subgraph "Presentation Layer (UI)"
+    subgraph "App Module"
+        BaseApp["BaseApplication<br/>(@HiltAndroidApp)"]
+        Configs["Global Initializers<br/>(Firebase, AdMob, Timber)"]
+        
+        BaseApp -->|Initializes| Configs
+    end
+
+    subgraph "Presentation Layer"
         UI["Compose UI<br/>(Activity/Screen)"]
         VM[ViewModel]
         UI -->|Observe State| VM
         VM -->|User Action| UI
     end
 
-    subgraph "Domain Layer (Business Logic)"
+    subgraph "Domain Layer"
         UC[UseCase]
         RepoInt[Repository Interface]
         Model[Domain Model]
@@ -50,7 +57,7 @@ graph TD
         RepoInt -.->|Returns| Model
     end
 
-    subgraph "Data Layer (Data Access)"
+    subgraph "Data Layer"
         RepoImpl[Repository Implementation]
         Remote["Remote Data Source<br/>(Ktor)"]
         Local["Local Data Source<br/>(Room)"]
@@ -60,31 +67,48 @@ graph TD
         RepoImpl -->|Calls| Local
     end
 
-    subgraph "Processor (Code Gen)"
+    subgraph "Processor (Code Generate)"
         KSP[NavGraphRegisterProcessor]
         KSP -.->|Generates| UI
     end
     
+    %% Relationships
+    BaseApp -.->|Injects & Launches| UI
+    
     %% Styling
     classDef layer fill:#f9f9f9,stroke:#333,stroke-width:2px;
-    class UI,VM,UC,RepoInt,RepoImpl,Remote,Local,Model layer
+    classDef appLayer fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    
+    class UI,VM,UC,RepoInt,RepoImpl,Remote,Local,Model,KSP layer
+    class BaseApp,Configs appLayer
 ```
 
 ## 🔄 데이터 흐름 (Data Flow)
 
-다음 시퀀스 다이어그램은 사용자가 이미지 생성을 요청했을 때의 데이터 흐름을 보여줍니다.
+사용자가 이미지 생성을 요청했을 때의 데이터 흐름도입니다.
 
 ```mermaid
 sequenceDiagram
     participant User
     participant Screen as HomeScreen (Compose)
     participant VM as HomeViewModel
+    participant Ads as GoogleAds
     participant UC as FetchFluxImageUseCase
     participant Repo as FluxImageRepository
     participant API as Ktor Client
     
-    User->>Screen: Click "Generate Image"
+    User->>Screen: "Generate Image" 클릭
     Screen->>VM: createFluxImage()
+    
+    opt 이미지 생성 가능 횟수 <= 0
+        VM->>Screen: 광고 필요 이벤트 발행
+        Screen->>Ads: 광고 로드 및 표시
+        User-->>Ads: 광고 시청
+        Ads-->>Screen: 광고 시청 완료 콜백
+        Screen->>VM: 이미지 생성 재요청
+    end
+
+    %% 공통 로직 (이미지 생성 시작)
     VM->>UC: invoke(prompt)
     UC->>Repo: fetchFluxImage(prompt)
     Repo->>API: POST /generate
@@ -93,11 +117,11 @@ sequenceDiagram
     UC-->>VM: Result<FluxImageRes>
     VM->>VM: update StateFlow
     VM-->>Screen: Collect State (Success)
-    Screen-->>User: Show Generated Image
+    Screen-->>User: 이미지 생성 및 표시
 ```
 
 ## ✨ 주요 기능 (Key Features)
 
 *   **텍스트-이미지 생성**: 상세한 텍스트 프롬프트를 사용하여 이미지 생성
-*   **프롬포트 관리**: 이전에 생성된 이미지 프롬포트를 로컬에서 확인 및 관리
+*   **프롬프트 관리**: 이전에 생성된 이미지 프롬프트를 로컬에서 확인 및 관리
 *   **커스텀 내비게이션**: KSP를 활용한 내비게이션 그래프 자동 등록
