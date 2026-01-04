@@ -1,0 +1,163 @@
+[versions]
+agp = "8.5.2"
+kotlin = "2.0.0"
+accompanistSystemuicontroller = "0.27.0"
+com-google-devtools-ksp = "2.0.0-1.0.22"
+playServicesAds = "23.3.0"
+symbolProcessingApi = "2.0.0-1.0.22"
+composeBom = "2024.09.02"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.6"
+activityCompose = "1.9.2"
+appcompat = "1.7.0"
+material = "1.12.0"
+navigationCompose = "2.8.1"
+com-google-gms-google-services = "4.4.2"
+com-google-firebase-crashlytics = "3.0.2"
+javaxInject = "1"
+
+# hilt
+com-google-dagger-hilt-android = "2.51.1"
+hiltNavigationCompose = "1.2.0"
+
+# corotine
+kotlinxCoroutinesCore = "1.8.1"
+
+# kotlinX
+kotlinxSerializationJson = "1.6.2"
+kotlinxCollectionsImmutable = "0.3.7"
+
+# lottie
+lottieCompose = "6.2.0"
+
+# timber
+timber = "5.0.1"
+
+# datastore
+datastorePreferences = "1.1.1"
+
+# reflection
+kotlinReflect = "2.0.0"
+
+# firebase
+firebaseBom = "33.3.0"
+
+# In app update
+app-update = "2.1.0"
+
+# db
+room = "2.6.1"
+
+# image
+coil = "2.4.0"
+
+# ktor
+ktorClientCore = "2.3.8"
+
+# google-translator
+googleTranslator = "2.48.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+
+
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-material = { group = "androidx.compose.material", name = "material" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+javax-inject = { module = "javax.inject:javax.inject", version.ref = "javaxInject" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesCore" }
+accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanistSystemuicontroller" }
+
+# kotlinX
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinxCollectionsImmutable" }
+
+# lottie
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieCompose" }
+
+# timber
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+symbol-processing-api = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "symbolProcessingApi" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+
+# dataStore
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastorePreferences" }
+
+# reflection
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlinReflect" }
+
+# firebase
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-crashlytics-ktx = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+firebase-messaging-ktx = { group = "com.google.firebase", name = "firebase-messaging-ktx" }
+firebase-config-ktx = { group = "com.google.firebase", name = "firebase-config-ktx"}
+firebase-database-ktx = { group = "com.google.firebase", name = "firebase-database-ktx" }
+firebase-analytics-ktx = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+
+# hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "com-google-dagger-hilt-android" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "com-google-dagger-hilt-android" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "com-google-dagger-hilt-android" }
+
+# In app update
+app-update = { group = "com.google.android.play", name = "app-update", version.ref = "app-update" }
+
+# room
+# db
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+# coil
+# image
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coil" }
+androidx-lifecycle-runtime-compose-android = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose-android", version.ref = "lifecycleRuntimeKtx" }
+
+# ktor
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorClientCore" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientCore" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientCore"}
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktorClientCore"}
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClientCore"}
+ktor-client-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClientCore"}
+
+# translator
+google-translator = { module = "com.google.cloud:google-cloud-translate", version.ref = "googleTranslator"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+org-jetbrains-kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+com-google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "com-google-devtools-ksp" }
+com-google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "com-google-dagger-hilt-android" }
+com-google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "com-google-gms-google-services" }
+com-google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "com-google-firebase-crashlytics" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
+[bundles]
+firebase = ["firebase-crashlytics-ktx", "firebase-messaging-ktx", "firebase-config-ktx", "firebase-database-ktx", "firebase-analytics-ktx"]
+ktor = ["ktor-client-cio", "ktor-client-core", "ktor-client-logging", "ktor-client-content-negotiation", "ktor-client-serialization", "ktor-client-okhttp"]
+room = ["room-runtime", "room-ktx"]
+
